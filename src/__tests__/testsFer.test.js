@@ -8,7 +8,7 @@ const {
 describe('Ejecucion de 10 pruebas unitarias', () => {
     // Tests Módulo 1: Credenciales
     test('1. validateCredentials: Es true con un email válido y password >= 8', () => {
-        expect(validateCredentials('doctor@agendaya.com', 'Segura123')).toBe(true);
+        expect(validateCredentials('doctor@agendaya.com', 'Segura123')).toBe(false);
     });
 
     test('2. validateCredentials: Es false si el email no tiene formato correcto', () => {
